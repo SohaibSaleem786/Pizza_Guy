@@ -1,0 +1,62 @@
+
+
+/* Default styles for buttons */
+
+
+/* Default style for the input */
+  .form-control {
+    font-size: 12px;
+  }
+  
+  
+  /* Default style for the table */
+  .MDBTable {
+    font-size: 12px;
+  }
+  /* marginLeft:'40%',width:'140%',height:'250px',fontSize:'11px' */
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    /* Adjust margin for the button container */
+    .firsttable-container
+    {
+      /* margin-left: 40%;
+      margin-right: -75%; */
+      max-width: 1040px;
+      height:250px;
+      font-size:11px;
+    }
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    /* Adjust margin for the button container */
+    .firsttable-container
+    {
+      /* margin-left: 5%;
+      margin-right: 5%; */
+      max-width: 90%;
+    }
+  }
+
+
+
+  @media (min-width: 768px) {
+    /* Adjust margin for the button container */
+    .Secondtable-container
+    {
+      max-width: 840%;
+      height:270px;
+      font-size:11px;
+    }
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    /* Adjust margin for the button container */
+    .Secondtable-container
+    {
+      /* margin-left: 5%;
+      margin-right: 5%; */
+      max-width: 90%;
+    }
+  }

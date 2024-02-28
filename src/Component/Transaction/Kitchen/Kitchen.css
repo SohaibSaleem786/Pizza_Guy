@@ -1,0 +1,50 @@
+.kitchen-screen-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 16px;
+    padding: 20px;
+    max-height: 81vh;
+  }
+  
+  .kitchen-card {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .kitchen-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .order-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .order-details {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: none;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  

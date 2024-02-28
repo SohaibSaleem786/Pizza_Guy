@@ -1,0 +1,6 @@
+@media print {
+    #receipt-container:not(.printing) {
+      display: none;
+    }
+  }
+  
