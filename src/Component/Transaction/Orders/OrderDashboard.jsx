@@ -722,7 +722,7 @@ const Order_Dashboard = () => {
   };
 
   const calculateSubtractedValue = (enteredAmount) => {
-    const tamtItemsInt = parseInt(String(getpayable).replace(/,/g, ""), 10);
+    const tamtItemsInt = parseInt(String(totalAmount).replace(/,/g, ""), 10);
 
     // Check if tamtItemsInt is a valid number
     if (!isNaN(tamtItemsInt)) {
@@ -1129,7 +1129,7 @@ const Order_Dashboard = () => {
                           fontSize: "11px",
                         }}
                       >
-                        <Button onClick={handleButtonClickmodal}>
+                        <Button onClick={handleButtonClickmodal} style={{backgroundColor:primaryColor,width:'100px'}}>
                           {buttonLabel}
                         </Button>
                       </Col>
@@ -1447,7 +1447,7 @@ const Order_Dashboard = () => {
                   <style>{customScrollbarStyle}</style>
                   <MDBTable
                     scrollY
-                    maxHeight="65vh"
+                    maxHeight="62vh"
                     striped
                     bordered
                     small
@@ -1606,7 +1606,7 @@ const Order_Dashboard = () => {
 
                 <div
                   className="row fixed-bottom"
-                  style={{ marginBottom: "15.3vh", marginRight: "67%" }}
+                  style={{ marginBottom: "15.3vh",fontSize: "12px", marginRight: "67%" }}
                 >
                   <div className="col-7">
                     <table>
@@ -1686,7 +1686,7 @@ const Order_Dashboard = () => {
                         border: "none",
                         opacity: "0.8",
                         fontWeight: "bold",
-                        fontSize: "13px",
+                        fontSize: "11px",
                         width: "100%",
                         color: "black",
                       }}
