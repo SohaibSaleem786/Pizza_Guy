@@ -158,7 +158,7 @@ const Order_Dashboard = () => {
     if (userData) {
       setUser(userData);
       console.log(userData);
-      fetchMenuItems(); 
+      fetchMenuItems();
       console.log("user id is", userData.id);
     } else {
       console.error("User data not available in local storage.");
@@ -176,7 +176,6 @@ const Order_Dashboard = () => {
   /////////////////////////////////////////////////////////////
 
   const [filteredDataItem, setFilteredDataItem] = useState([]);
-
 
   const handleQuantityChange = (itemIndex, newValue) => {
     const updatedData = [...filteredDataItem];
@@ -217,8 +216,8 @@ const Order_Dashboard = () => {
       .post(apiUrl, formData)
       .then((response) => {
         setTableData({
-          columns: [], 
-          rows: response.data.detail, 
+          columns: [],
+          rows: response.data.detail,
         });
         setnetpayable(response.data.payable.toLocaleString());
         settamtItems(response.data.totalAmt.toLocaleString());
@@ -227,8 +226,7 @@ const Order_Dashboard = () => {
         console.log("sdfsfsafasdf", response.data.detail.length);
         console.log("titm total amt ", response.data.detail);
       })
-      .catch((error) => {
-      });
+      .catch((error) => {});
   };
   useEffect(() => {
     fetchMenuItems();
@@ -341,9 +339,8 @@ const Order_Dashboard = () => {
   const handleNewOrderClickCar = (name) => {
     setNewOrderData("---");
     setName(name);
-    setShowCarModal(false);    
+    setShowCarModal(false);
     setDataOrderTypeeee1("1");
-
   };
   const handleNewOrderClickdining = () => {
     setDataOrderTypeeee1("1");
@@ -1129,7 +1126,13 @@ const Order_Dashboard = () => {
                           fontSize: "11px",
                         }}
                       >
-                        <Button onClick={handleButtonClickmodal} style={{backgroundColor:primaryColor,width:'100px'}}>
+                        <Button
+                          onClick={handleButtonClickmodal}
+                          style={{
+                            backgroundColor: primaryColor,
+                            width: "100px",
+                          }}
+                        >
                           {buttonLabel}
                         </Button>
                       </Col>
@@ -1606,7 +1609,11 @@ const Order_Dashboard = () => {
 
                 <div
                   className="row fixed-bottom"
-                  style={{ marginBottom: "15.3vh",fontSize: "12px", marginRight: "67%" }}
+                  style={{
+                    marginBottom: "15.3vh",
+                    fontSize: "12px",
+                    marginRight: "67%",
+                  }}
                 >
                   <div className="col-7">
                     <table>

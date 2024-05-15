@@ -20,7 +20,7 @@ function Footer() {
         <a className="text-dark" href="">
           Terms of Use
         </a>{" "}
-        | © 2023 Crystal Solution. All rights reserved.
+        | © 2024 Crystal Solution. All rights reserved.
       </div>
     </footer>
   );
